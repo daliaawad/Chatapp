@@ -1,2 +1,17 @@
-# Python Chat program: 
-The server should allow for multiple simultaneous clients (Multithread). Any client can get a list of all other connected clients from the server. The server should provide both clients sending to individual other clients, and clients sending to all other online users -- simultaneously. The server should support some other functionality like groups, where clients can join groups tracked by the server, and messages can be sent to all clients in the group. Other option to send files to other clients. Each client must have an ID; used for connecting with the server, in order the server can keep a list of all connected clients. The client should access all functionality that the server supports. Therefore it must be able to request a list of the IDs for all other connected clients, send messages to other individual users, and send broadcast messages to all users.
+# Python Chat Program
+
+This is a multi-client chat program implemented in Python, utilizing multithreading for handling multiple simultaneous clients. The program enables clients to connect to a server and communicate with each other in various ways. The server supports functionalities such as individual messaging, broadcast messaging, group creation and joining, and file sharing. Each client is assigned a unique ID upon connecting to the server, allowing the server to maintain a list of all connected clients.
+
+## Features
+
+- *Multiple Simultaneous Clients*: The server can handle multiple clients connecting simultaneously, facilitating concurrent communication among them.
+
+- *List of Connected Clients*: Clients can request a list of all other connected clients from the server, enabling them to see who else is currently online.
+
+- *Individual Messaging*: Clients can send messages to specific individual clients by specifying the recipient's ID, ensuring private conversations.
+
+- *Broadcast Messaging*: Clients can send messages that are broadcasted to all online clients, enabling global announcements or public discussions.
+
+- *Group Functionality*: Clients can create and join groups tracked by the server. Messages sent to a group are delivered to all clients within that group, fostering collaborative conversations.
+
+- *File Sharing*: Clients have the capability to send files to other clients, allowing the exchange of documents, images, or any other file type.
